@@ -1,11 +1,29 @@
+// {
+//   "compilerOptions": {
+//     "baseUrl": ".",
+//     "paths": {
+//       "@/*": ["./src/*"]
+//     },
+//   },
+
+//   "files": [],
+//   "references": [
+//     { "path": "./tsconfig.app.json" },
+//     { "path": "./tsconfig.node.json" }
+//   ]
+// }
+
 {
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    },
+    }
   },
-
+  "include": [
+    "src/**/*",           // Include all files in the src directory
+    "src/global.d.ts"    // Explicitly include your global type definitions
+  ],
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
