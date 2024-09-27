@@ -46,6 +46,7 @@
     "noEmit": false,  // Set to false to emit files; remove if you want to emit declarations only
     "jsx": "react-jsx",
     /* Enable composite */
+    "emitDeclarationOnly": true,
     "composite": true,
     "declaration": true,
 

@@ -43,6 +43,7 @@
     "moduleDetection": "force",
     "noEmit": false,  // Change to false if you want to emit .js files; remove if generating only declarations
     "declaration": true, // Ensure declaration files are generated if needed
+    "emitDeclarationOnly": true,
 
     /* Linting */
     "strict": true,
