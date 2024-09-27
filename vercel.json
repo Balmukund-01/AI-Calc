@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "math-notes/calc-fe/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "math-notes/calc-fe/dist" // Change this if needed based on your build output
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/math-notes/calc-fe/dist/$1"
+    }
+  ]
+}
