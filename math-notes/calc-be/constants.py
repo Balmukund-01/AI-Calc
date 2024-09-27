@@ -15,7 +15,7 @@ load_dotenv()
 
 # Change SERVER_URL based on the environment
 if os.getenv('ENV') == 'production':
-    SERVER_URL = '0.0.0.0'  # This allows the app to be accessible externally
+    SERVER_URL = 'https://ai-calc-server.vercel.app/'  # This allows the app to be accessible externally
 else:
     SERVER_URL = 'localhost'
 
