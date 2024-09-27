@@ -5,7 +5,7 @@
       "src": "math-notes/calc-fe/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "math-notes/calc-fe/dist" // Change this if needed based on your build output
+        "distDir": "math-notes/calc-fe/dist"
       }
     }
   ],
