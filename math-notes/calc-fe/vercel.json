@@ -1,17 +1,18 @@
 {
+    "version": 3,
     "builds": [
       {
-        "src": "vite.config.ts",
+        "src": "math-notes/calc-fe/package.json",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "dist" 
+          "distDir": "math-notes/calc-fe/dist"
         }
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/index.html"
+        "dest": "math-notes/calc-fe/dist/$1"
       }
     ]
   }
