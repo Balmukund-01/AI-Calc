@@ -87,7 +87,7 @@ export default function Home() {
             });
             const resp = await response.data;
             if (Array.isArray(resp)) {
-                // console.log('Response: ', resp);
+                console.log('Response: ', resp);
                 resp.forEach((data) => {
                     if (data.assign === true) {
                         setDictOfVars({
