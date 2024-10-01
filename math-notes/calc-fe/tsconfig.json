@@ -1,31 +1,20 @@
-// {
-//   "compilerOptions": {
-//     "baseUrl": ".",
-//     "paths": {
-//       "@/*": ["./src/*"]
-//     },
-//   },
-
-//   "files": [],
-//   "references": [
-//     { "path": "./tsconfig.app.json" },
-//     { "path": "./tsconfig.node.json" }
-//   ]
-// }
-
 {
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "target": "ESNext", // Set the target version
+    "module": "ESNext", // Set the module system
+    "strict": true, // Enable all strict type checking options
+    "jsx": "react", // Specify JSX code generation
+    "skipLibCheck": true // Skip type checking of declaration files
   },
   "include": [
-    "src/**/*",           // Include all files in the src directory
-    "src/global.d.ts"    // Explicitly include your global type definitions
+    "src/**/*" // Include all TypeScript files in the src directory
   ],
   "files": [],
-  "references": [
+  "references": [ 
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ]
