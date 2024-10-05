@@ -85,7 +85,7 @@ export default function Home() {
     }, []); 
 
     const joinCharacters = (stringArray: Array<string>): string => {
-        return stringArray.join(''); // This will join characters without extra spaces
+        return stringArray.join(' '); // This will join characters without extra spaces
     };
     
 
