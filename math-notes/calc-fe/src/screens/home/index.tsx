@@ -85,8 +85,11 @@ export default function Home() {
     }, []); 
 
     const joinCharacters = (stringArray: Array<string>): string => {
-        return stringArray.join(' '); // This will join characters without extra spaces
+        const joinedString = stringArray.join(' ');
+        // console.log(joinedString);  // Move this above return
+        return joinedString;
     };
+    
     
 
     const renderLatexToCanvas = (expression: string, answer: string) => {
@@ -101,6 +104,7 @@ export default function Home() {
             }
         }
     };
+
 
     const sendData = async () => {
         const canvas = canvasRef.current;

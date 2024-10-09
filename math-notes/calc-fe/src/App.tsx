@@ -3,8 +3,9 @@ import '@mantine/core/styles.css';
 import { MantineProvider } from "@mantine/core";
 
 import Home from "./screens/home";
-
+import History from "./components/History";
 import '@/index.css';
+// import path from "path";
 
 const paths = [ 
   {
@@ -13,6 +14,12 @@ const paths = [
       <Home />
     ),
   },
+  {
+    path: '/history',
+    element: (
+      <History />
+    ),
+  }
 ];
 
 const BrowserRouter = createBrowserRouter(paths);
